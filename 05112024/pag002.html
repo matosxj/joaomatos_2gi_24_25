@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+    label{
+        width: 150px;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    input{
+        width:200px;}
+    .formlinha{     /*Criar espaçamento entre linhas*/
+     margin-bottom:20px;
+    }  
+    fieldset{
+        display: block;
+        margin-left: 20px;
+        margin-right: 200px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border: 5px dashed gold;
+    }  
+    h1{
+        font-size: 55px;
+        text-align: center;
+        background-color:#FAFAD2;
+        color: #8000;
+        border: 8px groove chocolate;
+    }
+</style>   
+</head>
+
+<body>
+<div id="contact"><h1>Dados de Contacto:</h1>
+<form method="post">
+<fieldset>
+    <legend><h2>Dados Pessoais:</h2></legend>
+
+    <div class="formlinha">
+    <label for="contacNome">Nome:</label>
+    <input name="contacNome" id="contacNome" type="text"/>
+    </div>
+
+    <div class="formlinha">
+    <lasel for="email">Email:</lasel>
+    <input name="email" id="email" type="text"/>
+    </div>
+
+    <div class="formlinha">
+    <label for="notes">Comentários:</label>
+    <textarea name="notas" cols="40" rows="6" maxlength="200"></textarea>
+    </div>
+</fieldset>
+<fieldset>
+    <legend>Contactos Pessoais:</legend>
+    <br>
+    <label for="email_id">Email:</label>
+    <input id="email_id" name="email" type="email"><br><br>
+
+    <label for="telefone_id">Número de telefone: </label>
+    <input id="telefone_id" name="telefone" type="tel"><br><br>
+
+    <label for="url_id">Site da empresa: </label>
+    <input id="url_id" name="url" type ="url"><br><br>
+
+    <label for="data_id">Data de Nascimento: </label>
+    <input id="data_id" name="data" type="date"><br><br>
+
+    <labrt for="data_hora_id_id">Data/Hora:</labrt>
+    <input id="mes_id" name="hora" type="time"><br><br>
+    
+    <label for="mes_id">Em que mês nasceu?: </label>
+    <input id="mes_id" name="hora" type="time"><br><br>
+
+    <label for="hora_id">Hora do dia:</label>
+    <input id="hora_id" name="hora" type="time"><br><br>
+
+    <label for="semana_id">Semana:</label>
+    <input id="semana_id" name="semana" type="week"><br><br>
+    </fieldset><br>
+
+    <input id="senha_id" name="senha" type="password">
+    <input id="sim_id" name="semana" type ="week"><br>
+    <br>
+    <br>
+    <input id="java_id" type="checkbox" value="java" name="linguagens" checked>java<br>
+    <input id="cscharp_id" type="checkbox" value="csharp" name="linguagens">C#<br>
+    <input id="php_id" type="checkbox" value="php" name="linguagens" checked>PHP<br>
+    <input id="ruby_id" type="checkbox" value="ruby" name="linguagens">ruby<br>
+    <br>
+    <br>
+    </div>
+</fieldset>
+<fieldset>
+    <input id="sp_id" type="radio" value="sao_paulo" name="club">São paulo 
+    <input id="barcelona_id" type="radio" value="barcelona" name="club">Barcelona
+    <input id="milan_id" type="radio" value="milan" name="club">Milan
+    <input id="mu_id" type="radio" value="manchesterU" name="club">Manchester United
+    <input id="bdm_id" type="radio" value="bayer" name="club">Bayer Munique
+</fieldset>
+
+    insira a avaliação(entre 1 e 5)
+    <input type="number" name="avaliação" min="1" max="5">
+    <br><br>
+
+    Selecione um valor:
+    0<input id="numero2_id" name="numero2" type="range" min="1" max="5">
+
+    <div class="formlinha">
+        <input style="width:100px" type="submit" value="Enviar"/>
+        </div>
+</form>
+</body>
+</html>
