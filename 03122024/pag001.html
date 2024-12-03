@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <legend>FORMAÇÃO ACADÉMICA</legend>
+                <br>
+                <label for="Escolaridade_id">ESCOLARIDADE: </label>
+                <select id="Escolaridade_id" name="escolaridade">
+                    <option value="9">9º Ano</option>
+                    <option value="12">12º Ano</option>
+                    <option value="LC">Licenciatura</option>
+                </select>
+                <br><br>
+                <label for="Instituição_id">instituição de ensino: </label>
+                <input type="text" name="instituição" size="25" value="">
+                <br><br>
+                <label for="Data_id">Data em que terminou: </label>
+                <input type="date" name="data" size="25" value="">
+            </fieldset><br>
+            <fieldset><br>
+                <legend>FORMAÇÃO PROFISSIONAL</legend>
+                <label for="curso-id">Curso Profissional:</label>
+                <input id="CEF_id" type="radio" value="curso" name="CEF_info">CEF
+                <input id="VOC_id" type="radio" value="curso" name="VOC_ano">VOC
+                <input id="EFA_id" type="radio" value="curso" name="EFA_info">EFA
+                <input id="Profissional" type="radio" value="curso" name="Profissional">Profissional
+                <br><br>
+                <label for="ins_id">Instituição de ensino: </label>
+                <input type="instituição" name="instituição" size="25">
+                <br><br>
+                <label for="pergunta_id">Tem Formação na área da Informatica?:</label>
+                <input id="não_id" type="radio" value="curso" name="sim_info">sim
+                <input id="sim_id" type="radio" value="curso" name="não_ano">Não
+                <br><br>
+                <label for="nascimento_id">Que linguagem de programação conhece:</label>
+                <input id="c_id" type="radio" value="curso" name="c_info">C
+                <input id="c++_id" type="radio" value="curso" name="c++_ano">C++
+                <input id="java_id" type="radio" value="curso" name="java_info">Java
+                <input id="c#_id" type="radio" value="curso" name="c#_ano">c#
+                <input id="JavaScript" type="radio" value="curso" name="javaScript_info">JavaScript
+                <input id="php_id" type="radio" value="curso" name="php_ano">PHP
+                <br><br>
+                <label for="comentario_id">Comentário Livre: </label>
+                <input type="text" name="password" size="20" value=""><br><br>
+            </fieldset><br><br>
+                </form>
+            <input type="submit" value="enviar">
+    </body>
+</html>
