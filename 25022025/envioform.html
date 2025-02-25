@@ -1,0 +1,24 @@
+<html>
+    <head><title>Formulário com dados</title>
+    <script language="javascript">
+        function valida(frm){
+            if (frm.prod.value==""||frm.quant.value==""){
+                window.alert("É necessário preencher todos os campost");
+                return(false);}
+            else return(true);
+        }
+    </script>
+    </head>
+    <body><h2>Dados a enviar</h2>
+    <form name="formd" action="process.php" method="post" onsubmit="retur valida(formd)">
+    <table border=0>
+        <tr><td>Nome produto:
+
+        </td><input type=text name=prod>
+    <tr><td>Quantidade desejada;
+    </td><input type=text name=quant>
+    </table>
+<input type=submit value="Enviar dados">
+<input type=reset value="Apagar valores">
+</form></body>
+</html>
